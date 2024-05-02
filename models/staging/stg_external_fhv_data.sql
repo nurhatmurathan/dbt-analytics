@@ -1,6 +1,7 @@
 {{ config(materialized='view') }}
 
 select
+
     -- identifiers
     {{ dbt_utils.generate_surrogate_key(['dispatching_base_num', 'pickup_datetime']) }} as tripid,
     cast(dispatching_base_num as string) as vendorid,
