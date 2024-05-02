@@ -12,7 +12,7 @@ sources:
 
 models:
   - name: stg_green_tripdata
-    description: "This is a data about greent trip data. This example"
+    description: "This is a data about stg greent trip data. This example"
     columns:
       - name: tripid
         data_type: string
@@ -114,7 +114,7 @@ models:
         description: ""
 
   - name: stg_fhv_data
-    description: "This is external data."
+    description: "This is external fhv data."
     columns:
       - name: dispatching_base_num
         data_type: string
