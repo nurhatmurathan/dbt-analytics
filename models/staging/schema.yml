@@ -2,13 +2,13 @@ version: 2
 
 sources:
   - name: staging
-    database: useful-monitor-415110
+    database: carbon-zone-417117
     schema: trips_data_all
 
     tables:
       - name: green_tripdata
       - name: yellow_tripdata
-      - name: external_fhv_data
+      - name: fhv_data
 
 models:
   - name: stg_green_tripdata
@@ -113,7 +113,7 @@ models:
         data_type: numeric
         description: ""
 
-  - name: stg_external_fhv_data
+  - name: stg_fhv_data
     description: "This is external data."
     columns:
       - name: dispatching_base_num

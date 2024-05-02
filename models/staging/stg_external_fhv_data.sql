@@ -13,7 +13,7 @@ select
 
     -- trip info
     sr_flag,
-from {{ source('staging','external_fhv_data') }}
+from {{ source('staging','fhv_data') }}
 where dispatching_base_num is not null 
 
 -- {% if var('is_test_run', default=true) %}
